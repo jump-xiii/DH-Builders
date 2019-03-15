@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DH Builders</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Rock+Salt" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif;}
+.logotext {font-family: 'Fjalla One', sans-serif;}
+.acSig {font-family: 'Rock Salt', sans-serif;}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-theme w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-theme-d3 w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h2 class="w3-padding-64 logotext"><b>DH Builders</b></h2>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="mailto:info@d-hbuilders.co.uk?Subject=Online%20Enquiry" onclick="w3_close()" target="_top" class="w3-bar-item w3-button w3-hover-white">info@d-hbuilders.co.uk</a>
+    <a href="tel:+447779246526" class="w3-bar-item w3-button w3-hover-white">07886 581906</a>
+    <a href="https://www.instagram.com/dh_building" onclick="w3_close()" target="_blank" class="w3-bar-item w3-button w3-hover-white">DH Builders on IG <i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/thebuildingconsortium" onclick="w3_close()" target="_blank" class="w3-bar-item w3-button w3-hover-white">DH Builders on FB <i class="fab fa-facebook-f"></i></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-theme w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-theme-d3 w3-margin-right w3-hover-white" onclick="w3_open()">&#9776;</a>
+  <span class="logotext w3-xxlarge">DH Builders</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-text-theme" style="margin-top:80px" id="projects">
+    <h1 class="w3-jumbo logotext w3-hide-medium w3-hide-small"><b>DH Builders</b></h1>
+    <p>DH Builders is a family run building company. We specialise in loft conversions,  extensions and new builds and often carry out full renovation works for clients.</p>
+    <p>We offer a range of services including roofing slate and tile, lead work, torch on felt systems, single ply,  rubber roofing, painting, decorating, repair work, brick work and more.</p>
+    <p>We are based in South Hampshire, however we work across the south. We offer free quotes for any work and our rates are competitive. We strive to get every job done to the standard you desire.</p>
+    <p>Contact Dominic on <a href="tel:+447886581906" class="w3-hover-opacity">07886 581906</a>‬‬ or email <a href="mailto:info@d-hbuilders.co.uk?Subject=Online%20Enquiry" target="_top" class="w3-hover-opacity">info@d-hbuilders.co.uk</a></p>
+    <p>Follow us on <a href="https://www.instagram.com/dh_building" target="_blank" class="w3-hover-opacity">Instagram <i class="fab fa-instagram"></i></a> and <a href="https://www.facebook.com/thebuildingconsortium" target="_blank" class="w3-hover-opacity">Facebook <i class="fab fa-facebook-f"></i></a></p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <h1 class="w3-xxxlarge w3-text-theme"><b>Projects</b></h1>
+    <div class="w3-half">
+      <img src="images/kitchen refurb dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Kitchen refurbishment">
+      <img src="images/flat roof installation dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Flat roof installation">
+      <img src="images/bifold doors dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Bifold door installation">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/brickwork dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Classic brickwork">
+      <img src="images/building plans dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Full design and build service">
+      <img src="images/single storey extension dh builders.jpg" style="width:100%" onclick="onClick(this)" alt="Single storey extension">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container w3-text-theme" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"><b>Contact</b></h1>
+    <p>If you have any questions, or would like to request a free quotation, please get in touch:</p>
+    <p>Call Dominic on <a href="tel:+447886581906" class="w3-hover-opacity">07886 581906</a>‬‬ or email <a href="mailto:info@d-hbuilders.co.uk?Subject=Online%20Enquiry" target="_top" class="w3-hover-opacity">info@d-hbuilders.co.uk</a></p>
+    <p>Follow us on <a href="https://www.instagram.com/dh_building" target="_blank" class="w3-hover-opacity">Instagram <i class="fab fa-instagram"></i></a> and <a href="https://www.facebook.com/thebuildingconsortium" target="_blank" class="w3-hover-opacity">Facebook <i class="fab fa-facebook-f"></i></a></p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<div class="w3-theme-d3 w3-container " style="margin-top:75px;padding-right:58px">
+  <p class="w3-right">&copy; <script>document.write(new Date().getFullYear())</script> DH Builders <a href="https://www.instagram.com/dh_building" target="_blank" class="w3-hover-opacity"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/thebuildingconsortium" target="_blank" class="w3-hover-opacity"><i class="fab fa-facebook-f"></i></a> // Designed and built by <a href="https://www.alclunnie.com" title="Al Clunnie" target="_blank" class="w3-hover-opacity acSig">Al Clunnie</a> <a href="https://www.instagram.com/alclunnie" target="_blank" class="w3-hover-opacity"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/alclunniepage" target="_blank" class="w3-hover-opacity"><i class="fab fa-facebook-f"></i></a></p>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
